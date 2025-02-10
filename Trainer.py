@@ -9,6 +9,7 @@ class Trainer:
         self.height = height
         self.color = color
 
+
     def move(self, keys):
         if keys[pygame.K_LEFT]:
             self.x -= self.speed
