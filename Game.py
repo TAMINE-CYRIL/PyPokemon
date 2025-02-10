@@ -1,6 +1,6 @@
 import pygame
 from Screen import Screen
-from Hero import Hero
+from Trainer import Trainer
 
 class Game:
     def __init__(self):
