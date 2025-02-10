@@ -2,11 +2,24 @@ import pygame
 from Screen import Screen
 from Trainer import Trainer
 
+
+
+
 class Game:
     def __init__(self):
         self.screen = Screen()
+        pygame.mixer.init()
         self.running = True
         self.trainer = Trainer(400, 300, 50, 50, (255, 255, 255))
+        self.backgroundmusic = "assets/audio/background.mp3"
+        self.playmusic()
+
+
+    def playmusic(self):
+        pygame.mixer.music.load(self.backgroundmusic)
+        pygame.mixer.music.play()
+
+
 
     def run(self):
         while self.running:

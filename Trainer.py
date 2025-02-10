@@ -7,6 +7,7 @@ class Trainer:
         self.speed = 1
         self.width = width
         self.height = height
+        self.image = pygame.image.load('assets/images/sprite.png')
         self.color = color
 
 
