@@ -22,4 +22,4 @@ class Trainer:
             self.y += self.speed
 
     def draw(self, screen):
-        pygame.draw.rect(screen, self.color, [self.x, self.y, self.width, self.height])
+        screen.blit(self.image, (self.x, self.y))
