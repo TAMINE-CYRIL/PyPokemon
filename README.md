@@ -1,2 +1,2 @@
-# PygameRPG
-Petit jeu utilisant la librairie Pygame en Python.
+# PyPokemon
+Jeu Pokémon utilisant la librairie Pygame en Python.
