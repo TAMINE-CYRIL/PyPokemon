@@ -6,7 +6,7 @@ class Game:
     def __init__(self):
         self.screen = Screen()
         self.running = True
-        self.hero = Hero(400, 300, 50, 50, (255, 255, 255))  # Ajout du héros
+        self.trainer = Trainer(400, 300, 50, 50, (255, 255, 255))
 
     def run(self):
         while self.running:
@@ -21,5 +21,5 @@ class Game:
 
     def update(self):
         keys = pygame.key.get_pressed()
-        self.hero.move(keys)
-        self.hero.draw(self.screen.screen)
+        self.trainer.move(keys)
+        self.trainer.draw(self.screen.screen)

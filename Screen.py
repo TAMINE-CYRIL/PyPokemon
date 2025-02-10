@@ -1,6 +1,6 @@
 import pygame
 
-from Trainer import Hero
+from Trainer import Trainer
 
 
 class Screen:
